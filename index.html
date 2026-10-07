@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xu Bai | The University of Melbourne</title>
+  <meta name="description" content="Xu Bai is a PhD student at the University of Melbourne researching efficient systems for large-scale AI, LLM serving, and GPU resource management.">
+  <link rel="canonical" href="https://paprikaw.github.io/">
+  <link rel="icon" href="assets/img/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wrapper">
+  <header>
+    <img class="profile-avatar" src="assets/img/avatar.svg" alt="Xu Bai initials" width="112" height="112">
+    <h1>Xu Bai</h1>
+    <p class="position">Ph.D. Student<br><a href="https://www.unimelb.edu.au/">The University of Melbourne</a></p>
+    <a class="email" href="mailto:xu.bai.1@unimelb.edu.au">xu.bai.1@unimelb.edu.au</a>
+    <div class="profile-links"><a href="mailto:xu.bai.1@unimelb.edu.au">Email</a><span aria-hidden="true"> · </span><a href="https://github.com/paprikaw">GitHub</a></div>
+    <nav aria-label="Sections"><a href="#about-me">About</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#teaching">Teaching</a></nav>
+  </header>
+  <section id="main" tabindex="-1">
+    <h2 id="about-me">About Me</h2>
+    <p>I am a Ph.D. student in the Faculty of Engineering and Information Technology at <a href="https://www.unimelb.edu.au/">the University of Melbourne</a>. My research focuses on efficient systems for large-scale AI, particularly multi-GPU LLM serving, runtime resource management, and model parallelism.</p>
+    <p>I developed <a href="https://arxiv.org/abs/2604.12171">PipeLive</a>, a system for live, in-place pipeline-parallel reconfiguration and dynamic KV-cache management, accepted at ACM SoCC 2026. I am currently interested in Mixture-of-Experts systems, including expert parallelism and attention–expert disaggregation, and efficient infrastructure for both inference and training.</p>
+
+    <h2 id="research-interests">Research Interests</h2>
+    <ul class="interests">
+      <li><strong>LLM serving:</strong> model parallelism, live reconfiguration, and elastic KV-cache management</li>
+      <li><strong>MoE systems:</strong> expert parallelism and attention–expert disaggregation</li>
+      <li><strong>Distributed AI infrastructure:</strong> GPU resource management and efficient model execution</li>
+    </ul>
+
+    <h2 id="publications">Publications</h2>
+    <div class="publications">
+      <article class="paper">
+        <div class="paper-label"><span>SoCC ’26</span></div>
+        <div class="paper-content">
+          <h3><a href="https://arxiv.org/abs/2604.12171">PipeLive: Efficient Live In-place Pipeline Parallelism Reconfiguration for Dynamic LLM Serving</a></h3>
+          <p class="authors"><strong>Xu Bai</strong>, Muhammed Tawfiqul Islam, Chen Wang, Adel N. Toosi</p>
+          <p class="venue">ACM Symposium on Cloud Computing (SoCC), 2026 <span class="status">Accepted</span></p>
+          <p class="paper-summary">Live layer redistribution and KV-cache resizing while preserving in-flight inference requests.</p>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2604.12171">arXiv</a><a href="https://arxiv.org/pdf/2604.12171">PDF</a><a href="assets/bib/pipelive.bib">BibTeX</a></div>
+        </div>
+      </article>
+      <article class="paper">
+        <div class="paper-label"><span>Preprint</span></div>
+        <div class="paper-content">
+          <h3><a href="https://arxiv.org/abs/2609.20723">PixelFlow: Token-Level Workload Management for Efficient Distributed DiT Serving</a></h3>
+          <p class="authors">Zhexiang Zhang, Minchen Yu, Yifan Sun, <strong>Xu Bai</strong>, Xingliang Yuan, Adel N. Toosi</p>
+          <p class="venue">arXiv preprint, 2026</p>
+          <p class="paper-summary">Token-level workload management for efficient distributed Diffusion Transformer serving.</p>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2609.20723">arXiv</a><a href="https://arxiv.org/pdf/2609.20723">PDF</a><a href="assets/bib/pixelflow.bib">BibTeX</a></div>
+        </div>
+      </article>
+      <article class="paper">
+        <div class="paper-label"><span>IEEE CLOUD</span></div>
+        <div class="paper-content">
+          <h3><a href="https://arxiv.org/abs/2510.06675">REACH: Reinforcement Learning for Adaptive Microservice Rescheduling in the Cloud-Edge Continuum</a></h3>
+          <p class="authors"><strong>Xu Bai</strong>, Muhammed Tawfiqul Islam, Rajkumar Buyya, Adel N. Toosi</p>
+          <p class="venue">IEEE International Conference on Cloud Computing (CLOUD)</p>
+          <p class="paper-summary">Reinforcement learning for adaptive microservice placement across cloud and edge resources.</p>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2510.06675">arXiv</a><a href="https://arxiv.org/pdf/2510.06675">PDF</a><a href="assets/bib/reach.bib">BibTeX</a></div>
+        </div>
+      </article>
+    </div>
+
+    <h2 id="education">Education</h2>
+    <div class="entry"><strong>The University of Melbourne</strong><span class="dates">Feb. 2025 – Present</span><p>Doctor of Philosophy<br>Faculty of Engineering and Information Technology</p></div>
+    <div class="entry"><strong>The University of Melbourne</strong><span class="dates">Feb. 2023 – Nov. 2024</span><p>Master of Computer Science</p></div>
+    <div class="entry"><strong>The University of New South Wales</strong><span class="dates">Feb. 2020 – Sep. 2022</span><p>Bachelor of Science in Computer Science</p></div>
+
+    <h2 id="teaching">Teaching</h2>
+    <div class="entry"><strong>Distributed Systems (COMP90015)</strong><span class="dates">Semester 2, 2026</span><p>Tutor, The University of Melbourne. Tutorials on socket programming, concurrency, and client–server systems; programming assessment and feedback.</p></div>
+
+    <h2 id="experience">Industry Experience</h2>
+    <div class="entry"><strong>Hangzhou Traceek Video Technology</strong><span class="dates">Jan. – Feb. 2024</span><p>Software Engineer Intern. Edge-device video inference pipelines and Go microservices.</p></div>
+    <div class="entry"><strong>CETHIK Group</strong><span class="dates">Dec. 2021 – Apr. 2022</span><p>Software Engineer Intern. Full-stack development, backend APIs, and microservice deployment.</p></div>
+    <p class="site-footer">© 2026 Xu Bai · Built with the <a href="https://github.com/yaoyao-liu/minimal-light">Minimal Light</a> theme · Hosted on GitHub Pages</p>
+  </section>
+</div>
+</body>
+</html>

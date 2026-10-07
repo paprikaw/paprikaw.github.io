@@ -1,0 +1,53 @@
+html { scroll-behavior: smooth; }
+body { font-size: 17px; }
+.profile-avatar { display:block; margin: 0 auto 22px; border-radius:50%; }
+header h1 { margin-bottom:10px; font-size:32px; }
+.position { margin-bottom:10px; line-height:1.6; }
+.email { font: 13px/1.5 "Ubuntu Mono", monospace; overflow-wrap:anywhere; }
+.profile-links { margin:23px 0; }
+header nav { display:flex; flex-wrap:wrap; justify-content:center; gap:8px 14px; font-size:15px; max-width:210px; margin:auto; }
+section h2 { margin-top:30px; margin-bottom:14px; }
+section > h2:first-child { margin-top:0; }
+p { margin-bottom:16px; }
+.interests { padding-left:21px; }
+.interests li { margin-bottom:6px; }
+.paper { display:grid; grid-template-columns:90px 1fr; gap:17px; margin:0 0 26px; }
+.paper-label { padding-top:5px; }
+.paper-label span { display:inline-block; background:#043361; color:#fff; font:12px/1.5 Georgia,serif; padding:4px 7px; border-radius:2px; }
+.paper h3 { font-size:17px; line-height:1.4; margin:0 0 5px; font-weight:600; }
+.paper p { font-size:15px; line-height:1.45; margin:0 0 5px; }
+.paper .venue { font-style:italic; }
+.paper .paper-summary { color:#727272; margin:8px 0; }
+.status { color:#9a4d22; margin-left:5px; }
+.paper-links { display:flex; flex-wrap:wrap; gap:7px; margin-top:8px; }
+.paper-links a { font-size:12px; padding:1px 7px; border:1px solid #8b969e; border-radius:2px; color:#043361; }
+.paper-links a:hover { border-color:#043361; background:#eef4f9; }
+.entry { margin:0 0 19px; }
+.entry strong { display:block; }
+.entry p { font-size:16px; margin:3px 0; }
+.dates { display:block; font-size:14px; color:#777; }
+.site-footer { font-size:12px; color:#888; border-top:1px solid #eee; padding-top:20px; margin-top:38px; }
+.skip-link { position:absolute; top:-60px; left:12px; background:#fff; padding:8px; z-index:10; }
+.skip-link:focus { top:8px; }
+a:focus-visible { outline:2px solid #2a7bae; outline-offset:4px; }
+@media (prefers-color-scheme:dark) {
+  .paper-label span { background:#13466a; }
+  .paper .paper-summary,.dates { color:#b3b8c3; }
+  .paper-links a { color:#3eb7f0; border-color:#677380; }
+  .paper-links a:hover { background:#293b4c; }
+  .status { color:#e7ae80; }
+  .site-footer { border-color:#3a3b45; }
+  .skip-link { background:#20212b; }
+}
+@media (max-width:960px) {
+  header { padding-top:30px; padding-bottom:28px; }
+  section { margin-bottom:0; border-bottom:0; }
+  header nav { max-width:none; }
+}
+@media (max-width:480px) {
+  .paper { grid-template-columns:1fr; gap:8px; }
+  .paper-label { padding-top:0; }
+  .paper h3 { font-size:18px; }
+  .paper p { font-size:16px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
